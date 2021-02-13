@@ -11,6 +11,7 @@ import libra from "../images/libra.png";
 import scorpio from "../images/scorpio.png";
 import sagittarius from "../images/sagittarius.png";
 import capricorn from "../images/capricorn.png";
+import { Link } from "react-router-dom";
 
 const Horoscopes = () => {
   return (
@@ -18,54 +19,76 @@ const Horoscopes = () => {
       <h1>To get started select your sign</h1>
       <StyledDiv className="cardGroup">
         <Card>
-          <a>
-          <StyledText> December 22 - January 19</StyledText>
-          <Capricorn></Capricorn>
-          </a>
+          <Link to="/horoscope/capricorn">
+            <StyledText> December 22 - January 19</StyledText>
+            <Capricorn></Capricorn>
+          </Link>
         </Card>
         <Card>
-          <StyledText> January 20 - February 18</StyledText>
-          <Aquarius></Aquarius>
+          <Link to="/horoscope/aquarius">
+            <StyledText> January 20 - February 18</StyledText>
+            <Aquarius></Aquarius>
+          </Link>
         </Card>
         <Card>
-          <StyledText> February 19 - March 20</StyledText>
-          <Pisces></Pisces>
+          <Link to="/horoscope/pisces">
+            <StyledText> February 19 - March 20</StyledText>
+            <Pisces></Pisces>
+          </Link>
         </Card>
         <Card>
-          <StyledText> March 21 - April 19</StyledText>
-          <Aries></Aries>
+          <Link to="/horoscope/aries">
+            <StyledText> March 21 - April 19</StyledText>
+            <Aries></Aries>
+          </Link>
         </Card>
         <Card>
-          <StyledText> April 20 - May 20</StyledText>
-          <Taurus></Taurus>
+          <Link to="/horoscope/taurus">
+            <StyledText> April 20 - May 20</StyledText>
+            <Taurus></Taurus>
+          </Link>
         </Card>
         <Card>
-          <StyledText> May 21 - June 20</StyledText>
-          <Gemini></Gemini>
+          <Link to="/horoscope/gemini">
+            <StyledText> May 21 - June 20</StyledText>
+            <Gemini></Gemini>
+          </Link>
         </Card>
         <Card>
-          <StyledText> June 21 - July 22</StyledText>
-          <Cancer></Cancer>
+          <Link to="/horoscope/cancer">
+            <StyledText> June 21 - July 22</StyledText>
+            <Cancer></Cancer>
+          </Link>
         </Card>
         <Card>
-          <StyledText> July 23 - August 22</StyledText>
-          <Leo></Leo>
+          <Link to="/horoscope/leo">
+            <StyledText> July 23 - August 22</StyledText>
+            <Leo></Leo>
+          </Link>
         </Card>
         <Card>
-          <StyledText> August 23 - September 22</StyledText>
-          <Virgo></Virgo>
+          <Link to="/horoscope/virgo">
+            <StyledText> August 23 - September 22</StyledText>
+            <Virgo></Virgo>
+          </Link>
         </Card>
         <Card>
-          <StyledText> September 23 - October 22</StyledText>
-          <Libra></Libra>
+          <Link to="/horoscope/libra">
+            <StyledText> September 23 - October 22</StyledText>
+            <Libra></Libra>
+          </Link>
         </Card>
         <Card>
-          <StyledText> October 23 - November 21</StyledText>
-          <Scorpio></Scorpio>
+          <Link to="/horoscope/scorpio">
+            <StyledText> October 23 - November 21</StyledText>
+            <Scorpio></Scorpio>
+          </Link>
         </Card>
         <Card>
-          <StyledText> November 22 - December 21</StyledText>
-          <Sagittarius></Sagittarius>
+          <Link to="/horoscope/sagittarius">
+            <StyledText> November 22 - December 21</StyledText>
+            <Sagittarius></Sagittarius>
+          </Link>
         </Card>
       </StyledDiv>
     </>
