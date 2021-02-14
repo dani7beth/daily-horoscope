@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 const Horoscopes = () => {
   return (
     <>
-      <h1>To get started select your sign</h1>
+      <h1 style={{textAlign: 'center'}}>To get started select your sign</h1>
       <StyledDiv className="cardGroup">
         <Card>
           <Link to="/horoscope/capricorn">
@@ -108,7 +108,7 @@ export const StyledText = styled.p`
 `;
 
 export const Card = styled.div`
-  flex: 1 0 15%;
+  flex: 1 0 20%;
   margin-top: 100px;
   margin-left: 50px;
   margin-right: 50px;
@@ -120,6 +120,7 @@ export const Card = styled.div`
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #282828;
+  text-align: center;
 `;
 
 export const Aquarius = styled.div`

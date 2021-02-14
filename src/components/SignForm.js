@@ -130,7 +130,7 @@ export default () => {
   };
   return (
     <>
-      {toggle && <Alert>{zodiac}</Alert>}
+      {toggle && <Alert style={{color: '#ffffff', fontWeight: '600', fontSize: '2em'}}>{zodiac}</Alert>}
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Month</Form.Label>
